@@ -85,9 +85,9 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section className="mt-40 px-4 radial_gradient h-[578px]  md:-skew-x-[25deg] overflow-x-clip">
-        <div className="md:skew-x-[25deg] h-full w-full max-w-[1296px] mx-auto grid grid-cols-12 gap-10">
-          <div className="col-span-12 lg:col-span-6 px-4  flex items-center flex-col md:flex-row justify-center md:justify-start text-white text-start">
+      <section className="mt-40 py-24 md:py-0 px-4 radial_gradient md:h-[578px]  md:-skew-x-[25deg] overflow-x-clip">
+        <div className="md:skew-x-[25deg]  h-full w-full max-w-[1296px] mx-auto lg:grid grid-cols-12 gap-10">
+          <div className="lg:col-span-6 px-4 flex items-center flex-col md:flex-row justify-center md:justify-start text-white text-center md:text-start">
             <Image 
               src={Passe}
               alt=""
