@@ -6,3 +6,7 @@
 html,body, :root {
   font-family: var(--font-source);
 }
+
+.radial_gradient {
+  background: radial-gradient(circle, #46CAE9,#0866B0);
+}

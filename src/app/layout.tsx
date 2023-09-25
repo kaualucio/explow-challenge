@@ -1,8 +1,10 @@
+import { Header } from '@/components/Header'
 import './globals.css'
 
 import type { Metadata } from 'next'
 import { Source_Sans_3 } from 'next/font/google'
 import localFont from 'next/font/local'
+import { Footer } from '@/components/Footer'
 
 const source_sans_pro = Source_Sans_3({ 
   subsets: ['latin'],
@@ -27,7 +29,13 @@ export default function RootLayout({
 }) {
   return (
     <html lang="pt-br">
-      <body className={`${source_sans_pro.variable} ${burbank_condensed.variable}`}>{children}</body>
+      <body className={`${source_sans_pro.variable} ${burbank_condensed.variable} overflow-x-clip`}>
+        <Header />
+        <main>
+          {children}
+        </main>
+        <Footer />
+      </body>
     </html>
   )
 }
