@@ -9,7 +9,7 @@ import Explow from '../../public/images/Powered by.svg'
 
 export const Footer = () => {
   return (
-    <footer className="px-[72px] py-14 bg-white">
+    <footer className="px-10 md:px-[72px] py-14 bg-white">
       <div className="w-full max-w-[1296px] mx-auto flex flex-col justify-between">
         <div className="flex items-center justify-between flex-col md:flex-row gap-10">
           <Image

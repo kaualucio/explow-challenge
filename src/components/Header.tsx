@@ -6,25 +6,9 @@ import React from 'react'
 import Logo from '../../public/images/logo (1).svg'
 import Link from 'next/link'
 import { CTA } from './CTA'
+import { Webmenu } from './Webmenu'
+import { MobileMenu } from './MobileMenu'
 
-const NavLinks = [
-  {
-    label: 'Torneios',
-    href: '',
-  },
-  {
-    label: 'Passe de Batalha',
-    href: '',
-  },
-  {
-    label: 'V-Bucks',
-    href: '',
-  },
-  {
-    label: 'Itens',
-    href: '',
-  },
-]
 
 export const Header = () => {
   return (
@@ -36,18 +20,8 @@ export const Header = () => {
             alt=""
           />
         </Link>
-        <nav className="flex items-center gap-11">
-          {
-            NavLinks.map(link => (
-              <Link 
-                key={link.label} 
-                href={link.href} 
-                className="text-lg text-white">
-                {link.label}
-              </Link>
-            ))
-          }
-        </nav>
+        <Webmenu />
+        <MobileMenu />
         <CTA title="Conheça" />
       </div>
     </header>

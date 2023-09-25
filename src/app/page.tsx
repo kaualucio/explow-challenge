@@ -38,17 +38,10 @@ export default function Home() {
       <section className={`h-fit md:h-[90vh] relative w-full px-4 animate-hero_bg bg-cover  bg-center`}>
         <ProgressBar />
         <Overlay />
-        {/* <Image 
-          src={HeroBG}
-          alt=""
-          fill
-          className="w-full h-full object-fill absolute top-0 left-0"
-        /> */}
         <div className="pt-48 md:pt-0 relative z-[60] grid grid-cols-6 md:grid-cols-12 gap-10 content-end w-full max-w-[1296px] h-full pb-32 mx-auto ">
           <div className="grid col-span-6 md:col-span-7 gap-7">
             <Platforms />
             <p className="text-white text-2xl">Boas vindas ao mundo de</p>
-            {/* <h1 className="text-[145px] font-burbank text-white">FORNITE</h1> */}
             <Image 
               src={Logo}
               alt=""
@@ -94,7 +87,7 @@ export default function Home() {
       </section>
       <section className="mt-40 px-4 radial_gradient h-[578px] -skew-x-[10deg] lg:-skew-x-[25deg] overflow-x-clip">
         <div className="skew-x-[10deg] lg:skew-x-[25deg] h-full w-full max-w-[1296px] mx-auto grid grid-cols-12 gap-10">
-          <div className="col-span-12 lg:col-span-6 flex items-center text-white">
+          <div className="col-span-12 lg:col-span-6 px-4  flex items-center flex-col md:flex-row justify-center md:justify-start text-white text-start">
             <Image 
               src={Passe}
               alt=""
