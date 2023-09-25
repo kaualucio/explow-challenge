@@ -7,6 +7,7 @@ import X from '../../public/images/x.svg'
 import { NavLinks } from './Webmenu'
 import Link from 'next/link'
 import { isJsxOpeningElement } from 'typescript'
+import { CTA } from './CTA'
 
 
 export const MobileMenu = () => {
@@ -37,17 +38,20 @@ export const MobileMenu = () => {
         isOpen ? (
           <div className="">
             <div className="w-full h-screen overflow-hidden bg-black bg-opacity-50 fixed top-0 left-0 z-[9999]"/>
-            <div className="absolute top-24 left-0 z-[99999] w-full bg-white flex flex-col">
+            <div className="absolute top-24 left-0 z-[99999] w-full bg-white flex flex-col gap-3">
               {
                 NavLinks.map(link => (
                   <Link 
                     key={link.label} 
                     href={link.href} 
-                    className="inline-block h-fit p-5 bg-gray-100 text-lg text-gray-800">
+                    className="inline-block h-fit p-5 text-lg text-gray-800">
                     {link.label}
                   </Link>
                 ))
               }
+              <div className="px-5 pb-5">
+                <CTA title="Conheça" />
+              </div>
             </div>
           </div>
         )

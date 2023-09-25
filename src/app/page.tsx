@@ -85,8 +85,8 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section className="mt-40 px-4 radial_gradient h-[578px] -skew-x-[10deg] lg:-skew-x-[25deg] overflow-x-clip">
-        <div className="skew-x-[10deg] lg:skew-x-[25deg] h-full w-full max-w-[1296px] mx-auto grid grid-cols-12 gap-10">
+      <section className="mt-40 px-4 radial_gradient h-[578px]  md:-skew-x-[25deg] overflow-x-clip">
+        <div className="md:skew-x-[25deg] h-full w-full max-w-[1296px] mx-auto grid grid-cols-12 gap-10">
           <div className="col-span-12 lg:col-span-6 px-4  flex items-center flex-col md:flex-row justify-center md:justify-start text-white text-start">
             <Image 
               src={Passe}

@@ -22,7 +22,9 @@ export const Header = () => {
         </Link>
         <Webmenu />
         <MobileMenu />
-        <CTA title="Conheça" />
+        <div className="hidden md:block">
+          <CTA title="Conheça" />
+        </div>
       </div>
     </header>
   )
