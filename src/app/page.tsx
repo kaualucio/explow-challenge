@@ -1,45 +1,43 @@
-import Image from "next/image";
-
-import { Platforms } from "@/components/Platforms";
-import { Overlay } from "@/components/Overlay";
 import { CTA } from "@/components/CTA";
 import { HeroVideo } from "@/components/HeroVideo";
+import { Overlay } from "@/components/Overlay";
+import { Platforms } from "@/components/Platforms";
+import { ProgressBar } from "@/components/ProgressBar";
+import { SectionTitle } from "@/components/SectionTitle";
+import { SkinCard } from "@/components/SkinCard";
 import { TournamentsCard } from "@/components/TournamentsCard";
-
+import { VBucksCard } from "@/components/VBucksCard";
 import HeroBG from '/public/images/image4.png'
-import Logo from '../../public/images/logo.svg'
-import Torneios from '../../public/images/Torneios.svg'
-import Itens from '../../public/images/itens.svg'
-import Creditos from '../../public/images/creditos.svg'
-import Personagem1 from '../../public/images/Blob(6).svg'
+import Image from "next/image";
+
 import Personagem2 from '../../public/images/Blob (1).svg'
-import Personagem3 from '../../public/images/starwars.svg'
+import Personagem6 from '../../public/images/Blob (2).svg'
 import Personagem4 from '../../public/images/Blob-1.svg'
 import Personagem5 from '../../public/images/Blob-2.svg'
-import Personagem6 from '../../public/images/Blob (2).svg'
-import Personagem7 from '../../public/images/image 19.svg'
-import Personagem8 from '../../public/images/image20.svg'
-import Personagem9 from '../../public/images/image 13.svg' 
-import Passe from '../../public/images/passe.svg'
-import Vbucks1 from '../../public/images/image 9.svg'
+import Personagem1 from '../../public/images/Blob(6).svg'
+import Creditos from '../../public/images/creditos.svg'
+import Friends from '../../public/images/image 1.svg'
 import Vbucks2 from '../../public/images/image 10.svg'
 import Vbucks3 from '../../public/images/image 11.svg'
 import Vbucks4 from '../../public/images/image 12.svg'
-import Friends from '../../public/images/image 1.svg'
-
-import { SectionTitle } from "@/components/SectionTitle";
-import { VBucksCard } from "@/components/VBucksCard";
-import { SkinCard } from "@/components/SkinCard";
-import { ProgressBar } from "@/components/ProgressBar";
+import Personagem9 from '../../public/images/image 13.svg'
+import Personagem7 from '../../public/images/image 19.svg'
+import Vbucks1 from '../../public/images/image 9.svg'
+import Personagem8 from '../../public/images/image20.svg'
+import Itens from '../../public/images/itens.svg'
+import Logo from '../../public/images/logo.svg'
+import Passe from '../../public/images/passe.svg'
+import Personagem3 from '../../public/images/starwars.svg'
+import Torneios from '../../public/images/Torneios.svg'
 
 export default function Home() {
   return (
     <>
-      <section className={`h-fit md:h-[90vh] relative w-full px-4 animate-hero_bg bg-cover  bg-center`}>
+      <section className={`h-full 2xl:h-[90vh] relative w-full px-4 animate-hero_bg bg-cover  bg-center`}>
         <ProgressBar />
         <Overlay />
-        <div className="pt-48 md:pt-0 relative z-[60] grid grid-cols-6 md:grid-cols-12 gap-10 content-end w-full max-w-[1296px] h-full pb-32 mx-auto ">
-          <div className="grid col-span-6 md:col-span-7 gap-7">
+        <div className="pt-48 relative z-[60] grid grid-cols-6 md:grid-cols-12 gap-10 content-end w-full max-w-[1296px] h-full pb-32 mx-auto ">
+          <div className=" grid col-span-6 md:col-span-7 gap-7">
             <Platforms />
             <p className="text-white text-2xl">Boas vindas ao mundo de</p>
             <Image 

@@ -8,6 +8,9 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      screens: {
+        '2xl': '1367px',
+      },
       fontFamily: {
         source: ['var(--font-source)'],
         burbank: ['var(--font-burbank)'],

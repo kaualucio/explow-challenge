@@ -1,4 +1,5 @@
 import { Header } from '@/components/Header'
+
 import './globals.css'
 
 import type { Metadata } from 'next'
@@ -28,7 +29,7 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="pt-br">
+    <html lang="pt-br" className="h-full">
       <body className={`${source_sans_pro.variable} ${burbank_condensed.variable} overflow-x-clip`}>
         <Header />
         <main>
